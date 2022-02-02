@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive; */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eee;
+}
+
+main {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem 6rem;
+  color: hsl(0, 0%, 95%);
+  line-height: 1.7;
+  font-size: 2rem;
+}
+
+.card h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.card a {
+  display: inline-block;
+  padding: 1.8rem 4rem;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  margin: 4rem 0 3rem 0;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-box-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-box-1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-box-1 a:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  outline: 3px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.card-box-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-box-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-box-2 a:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  outline: 3px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.card-box-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-box-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-box-3 a:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  outline: 3px solid hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 280px) {
+  main {
+    margin-top: 5rem;
+  }
+  .cards .card {
+    padding: 2rem 6rem;
+    max-width: 100%;
+  }
+  .cards .card a {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .cards .card {
+    padding: 2rem 4rem;
+  }
+
+  .cards .card a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .cards .card {
+    padding: 2rem 4rem;
+  }
+
+  .cards .card a {
+    font-size: 1.6rem;
+  }
+}
